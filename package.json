@@ -1,10 +1,11 @@
 {
   "name": "masks-js",
   "version": "0.0.1",
-"description": "A NPM package that exports functions to mask values.",
+  "description": "A NPM package that exports functions to mask values.",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"babel ./src -d ./lib"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/bhargavag78/corp-credit-card/issues"
   },
-  "homepage": "https://github.com/bhargavag78/corp-credit-card#readme"
+  "homepage": "https://github.com/bhargavag78/corp-credit-card#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
